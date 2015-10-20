@@ -20,6 +20,7 @@ var drawMap = function() {
 // Function for getting data
 var getData = function() {
 
+	console.log('hello')
 	// Execute an AJAX request to get the data in data/response.js
 	$.ajax({url: 'data/response.json', success: function(data) {
 		customBuild(data)
