@@ -32,7 +32,9 @@ var customBuild = function(data) {
 	layers = {};
 	metrics = {};
 
-	for (dat in data) {
+	console.log(data);
+
+	/*for (dat in data) {
 		var d = data[dat];
 		var circle = new L.circleMarker([d.lat, d.lng], {
 			color: (d['Hit or Killed?'] ? (d['Hit or Killed?'].toLowerCase() == 'killed' ? 'red' : 'blue') : 'grey')
@@ -75,7 +77,7 @@ var customBuild = function(data) {
 
 	console.log('hello');
 	
-	}
+	}*/
 
 	for (l in layers) {
 		layers[l].addTo(map);		
