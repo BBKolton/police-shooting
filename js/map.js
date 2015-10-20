@@ -32,6 +32,8 @@ var getData = function() {
 // Loop through your data and add the appropriate layers and points
 var customBuild = function(data) {
 	// Be sure to add each layer to the map
+	data = data[0];
+
 	layers = {};
 	metrics = {};
 
