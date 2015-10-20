@@ -1,4 +1,63 @@
 /* You'll probably want to add some styles here */
-#container {
-	height:800px;
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#map {
+	height: 600px;
+	margin-bottom: 20px;
+}
+
+#total {
+	background-color: #e6d5a4;
+	position: relative;
+	min-height: 100%;
+}
+
+#title {
+	background-color: #cd394a;
+	text-align: center;
+	margin-bottom: 20px;
+	color: white;
+}
+
+#data {
+	margin-bottom: 50px;
+}
+
+.about {
+	background-color: #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.about h2 {
+	margin-top: 5px;
+}
+
+#foot {
+	background-color: #5a7b52;
+	color: white;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+@media screen and (min-width: 992px) {
+	h2 {
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	#title p {
+		font-size: 20px
+	}
 }
