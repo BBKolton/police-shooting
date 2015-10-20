@@ -20,7 +20,6 @@ var drawMap = function() {
 // Function for getting data
 var getData = function() {
 
-	console.log('hello')
 	// Execute an AJAX request to get the data in data/response.js
 	$.ajax({url: 'data/response.json', success: function(data) {
 		customBuild(data)
@@ -74,11 +73,12 @@ var customBuild = function(data) {
 		circle.bindPopup(str);
 		circle.addTo(layer);
 
+	console.log('hello');
 	
 	}
 
 	for (l in layers) {
-		layers[l].addTo(map)		
+		layers[l].addTo(map);		
 	}
 
 	// Once layers are on the map, add a leaflet controller that shows/hides layers
