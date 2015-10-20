@@ -21,9 +21,12 @@ var drawMap = function() {
 var getData = function() {
 
 	// Execute an AJAX request to get the data in data/response.js
-	$.ajax({url: 'data/response.json', success: function(data) {
-		customBuild(data)
-	}});
+	$.ajax({url: 'data/response.json',
+		dataType: 'json',
+		success: function(data) {
+			customBuild(data)
+		}
+	});
 }
 
 // Loop through your data and add the appropriate layers and points
@@ -34,7 +37,7 @@ var customBuild = function(data) {
 
 	console.log(data);
 
-	/*for (dat in data) {
+	for (dat in data) {
 		var d = data[dat];
 		var circle = new L.circleMarker([d.lat, d.lng], {
 			color: (d['Hit or Killed?'] ? (d['Hit or Killed?'].toLowerCase() == 'killed' ? 'red' : 'blue') : 'grey')
@@ -77,7 +80,7 @@ var customBuild = function(data) {
 
 	console.log('hello');
 	
-	}*/
+	}
 
 	for (l in layers) {
 		layers[l].addTo(map);		
